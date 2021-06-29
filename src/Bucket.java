@@ -1,13 +1,14 @@
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Eine einfache Implementierung der verketteten Listen für die HashMap
+ */
 public class Bucket {
     private List<Entry> entries;
 
     public Bucket() {
-        if (entries == null) {
-            entries = new LinkedList<>();
-        }
+        entries = new LinkedList<>();
     }
 
     public int size() {
