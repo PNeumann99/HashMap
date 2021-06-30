@@ -88,7 +88,7 @@ public class HashMap<Key, Value> {
     }
 
     /**
-     * Berechnet den Hashwert eines Schluessels
+     * Berechnet den Hashwert eines Schluessels mittels der Divisionsmethode
      *
      * @param key der Schluessel, dessen Hashwert berechnet werden soll.
      * @return der berechnete Hashwert.
