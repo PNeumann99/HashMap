@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -113,7 +114,7 @@ public class HashMap<Key, Value> {
         // Datei Wort fuer Wort einlesen und in die HashMap einfuegen.
         String word;
         while (read.hasNext()) {
-            word = read.next();
+            word = read.next().toLowerCase(Locale.ROOT);
             if (map.contains(word)) { // falls das Wort schon einmal gelesen wurde, erhoehe den Zaehler
                 map.put(word, map.get(word) + 1);
             } else { // falls nicht, fuege es in die HashMap ein.
